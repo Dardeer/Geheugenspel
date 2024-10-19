@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DianTron
-build_property.ProjectDir = D:\Testplan\Geheugenspel\DianTron\DianTron\
+build_property.ProjectDir = D:\DianTronRepo\DianTron\DianTron\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Testplan\\Geheugenspel\\DianTron\\DianTron\\DianTron.csproj": {}
+    "D:\\DianTronRepo\\DianTron\\DianTron\\DianTron.csproj": {}
   },
   "projects": {
-    "D:\\Testplan\\Geheugenspel\\DianTron\\DianTron\\DianTron.csproj": {
+    "D:\\DianTronRepo\\DianTron\\DianTron\\DianTron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Testplan\\Geheugenspel\\DianTron\\DianTron\\DianTron.csproj",
+        "projectUniqueName": "D:\\DianTronRepo\\DianTron\\DianTron\\DianTron.csproj",
         "projectName": "DianTron",
-        "projectPath": "D:\\Testplan\\Geheugenspel\\DianTron\\DianTron\\DianTron.csproj",
+        "projectPath": "D:\\DianTronRepo\\DianTron\\DianTron\\DianTron.csproj",
         "packagesPath": "C:\\Users\\diand\\.nuget\\packages\\",
-        "outputPath": "D:\\Testplan\\Geheugenspel\\DianTron\\DianTron\\obj\\",
+        "outputPath": "D:\\DianTronRepo\\DianTron\\DianTron\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

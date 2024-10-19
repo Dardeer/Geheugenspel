@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DianTron")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a0d43966fe9935fcf6a7a4afd06be5b0482e2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7278e6dbe6c536685826425d7c9c345051062dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("DianTron")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DianTron")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

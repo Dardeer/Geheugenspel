@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing.Text;
+using System.Media; // Nieuw Functie -1
 using System.Linq;
 using System.Windows.Forms;
+using WMPLib; // WindowsMediaPlayer // Nieuw Functie -2
+
 
 namespace DianTron
 {
@@ -15,11 +18,21 @@ namespace DianTron
         PictureBox firstClicked = null, secondClicked = null;
         Random random = new Random();
         int pairsFound = 0;  // Counter for pairs 
+        SoundPlayer player; // palayer als een variable // Nieuw Functie -1
+        WindowsMediaPlayer backgroundPlayer; // Achtergrondmuziek speler // Nieuw Functie -2
         public Form1()
         {
             InitializeComponent();
             LoadImages();  
             AssignImagesToPictureBoxes();  // random images 
+            player = new SoundPlayer(@"D:\DianTronRepo\DianTron\DianTron\Geluid_Effect\geluid_pair_found.wav"); // geluid laden // Nieuw Functie -1
+
+
+            // Achtergrondmuziek instellen functie -2
+            backgroundPlayer = new WindowsMediaPlayer();
+            backgroundPlayer.URL = @"D:\DianTronRepo\DianTron\DianTron\Achtergrondmuziek\Butterfly-chosic.com_.mp3\"; // Pas het pad aan naar je achtergrondmuziek bestand
+            backgroundPlayer.settings.setMode("loop", true); // Zet de muziek op loop
+            backgroundPlayer.controls.play(); // Speel de achtergrondmuziek af  // Nieuw Functie -2
         }
 
 
@@ -111,9 +124,10 @@ namespace DianTron
             // Check if flashcards match
             if (firstClicked.Tag == secondClicked.Tag)
             {
-                pairsFound++;  
+                pairsFound++;
+                player.Play(); // geluid afspelen // Nieuw Functie -1
 
-               
+
                 if (pairsFound == pictureBoxes.Count / 2)
                 {
                     
@@ -167,9 +181,15 @@ namespace DianTron
             secondClicked = null;
             pairsFound = 0; 
             LoadImages();  // Reload images
-            AssignImagesToPictureBoxes(); 
+            AssignImagesToPictureBoxes();
+            // Herstart de achtergrondmuziek indien nodig // nieuw funtie -2
+            backgroundPlayer.controls.play();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            backgroundPlayer.controls.stop(); // Stop de muziek bij het sluiten van het spel
+            base.OnFormClosing(e);
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
