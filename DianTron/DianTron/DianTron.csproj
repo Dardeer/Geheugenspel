@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\1.jpg" />
+    <None Remove="Images\11.jpg" />
+    <None Remove="Images\2.jpg" />
+    <None Remove="Images\22.jpg" />
+    <None Remove="Images\3.jpg" />
+    <None Remove="Images\33.jpg" />
+    <None Remove="Images\4.jpg" />
+    <None Remove="Images\44.jpg" />
+    <None Remove="Images\5.jpg" />
+    <None Remove="Images\55.jpg" />
+    <None Remove="Images\6.jpg" />
+    <None Remove="Images\66.jpg" />
+    <None Remove="Images\7.jpg" />
+    <None Remove="Images\77.jpg" />
+    <None Remove="Images\8.jpg" />
+    <None Remove="Images\88.jpg" />
+    <None Remove="pics\1 - kopie.jpg" />
+    <None Remove="pics\1.jpg" />
+    <None Remove="pics\2 - kopie.jpg" />
+    <None Remove="pics\2.jpg" />
+    <None Remove="pics\3 - kopie.jpg" />
+    <None Remove="pics\3.jpg" />
+    <None Remove="pics\4 - kopie.jpg" />
+    <None Remove="pics\4.jpg" />
+    <None Remove="pics\5 - kopie.jpg" />
+    <None Remove="pics\5.jpg" />
+    <None Remove="pics\6 - kopie.jpg" />
+    <None Remove="pics\6.jpg" />
+    <None Remove="pics\7 - kopie.jpg" />
+    <None Remove="pics\7.jpg" />
+    <None Remove="pics\8 - kopie.jpg" />
+    <None Remove="pics\8.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\11.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\22.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\33.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\44.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\55.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\66.jpg" />
+    <Content Include="Images\7.jpg" />
+    <Content Include="Images\77.jpg" />
+    <Content Include="Images\8.jpg" />
+    <Content Include="Images\88.jpg" />
+    <Content Include="pics\1 - kopie.jpg" />
+    <Content Include="pics\1.jpg" />
+    <Content Include="pics\2 - kopie.jpg" />
+    <Content Include="pics\2.jpg" />
+    <Content Include="pics\3 - kopie.jpg" />
+    <Content Include="pics\3.jpg" />
+    <Content Include="pics\4 - kopie.jpg" />
+    <Content Include="pics\4.jpg" />
+    <Content Include="pics\5 - kopie.jpg" />
+    <Content Include="pics\5.jpg" />
+    <Content Include="pics\6 - kopie.jpg" />
+    <Content Include="pics\6.jpg" />
+    <Content Include="pics\7 - kopie.jpg" />
+    <Content Include="pics\7.jpg" />
+    <Content Include="pics\8 - kopie.jpg" />
+    <Content Include="pics\8.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
